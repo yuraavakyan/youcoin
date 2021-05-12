@@ -10,14 +10,14 @@ import ComponentsContainer from "../componentsContainer/ComponentsContainer";
 const MainPage = () => {
   return (
     <div>
-      {/* <Router>
+      <Router>
         <Navbar />
         <Switch>
           <Route exact path="/" component={Table} />
           <Route path="/coins" component={CoinPage} />
         </Switch>
-      </Router> */}
-      <ComponentsContainer />
+      </Router>
+      {/* <ComponentsContainer /> */}
     </div>
   );
 };
