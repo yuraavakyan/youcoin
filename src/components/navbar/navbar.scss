@@ -1,0 +1,44 @@
+@import "../../styles/mixins.scss";
+
+.nav-container {
+  width: 100%;
+  height: auto;
+  @include flex(center, center);
+  background: var(--navbarColor);
+  transition: background-color 0.2s;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.navbar {
+  @include flex(space-between, center);
+  width: 90%;
+  padding: 20px 0;
+}
+
+.logo-pic {
+  img {
+    width: 50px;
+  }
+}
+
+.nav-logo {
+  cursor: pointer;
+  @include flex(center, center);
+  font-family: "Wire One", sans-serif;
+  font-size: 60px;
+  div {
+    margin-right: 5px;
+  }
+}
+
+.nav-links {
+  @include flex(center, stretch);
+
+  cursor: pointer;
+  span {
+    margin-right: 5px;
+  }
+}

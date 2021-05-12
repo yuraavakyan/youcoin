@@ -1,0 +1,31 @@
+@import "../../../styles/mixins.scss";
+
+.toggle-mode {
+  @include flex(center, flex-end);
+  margin-right: 15px;
+}
+
+.toggle-body {
+  height: 20px;
+  width: 40px;
+  background-color: var(--toggleButton);
+  border-radius: 30px;
+  position: relative;
+}
+
+.toggle-button {
+  position: absolute;
+  left: 1px;
+  background-color: var(--darkModeButton);
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  transition: left 0.2s;
+  img {
+    height: 18px;
+  }
+}
+
+.dark-activated {
+  left: 20px;
+}

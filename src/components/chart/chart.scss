@@ -1,0 +1,5 @@
+@import "../../styles/mixins.scss";
+
+.chart {
+  @include flex(center, center);
+}

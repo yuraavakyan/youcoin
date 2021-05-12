@@ -1,0 +1,59 @@
+@import "../../styles/mixins.scss";
+
+.line {
+  height: 100px;
+  width: 1px;
+  background-color: white;
+}
+
+.info-part {
+  @include flex(center, center);
+}
+
+.coin-page {
+  @include flex(center, stretch);
+  flex-direction: column;
+}
+
+.title-part {
+  @include flex(center, stretch);
+  margin-right: 30px;
+}
+
+.title-price {
+  @include flex(center, center);
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.main-title {
+  font-size: 45px;
+  line-height: 0;
+  @include flex(center, center);
+}
+
+.main-price {
+  font-size: 30px;
+}
+
+.marketcap-volume,
+.available-total {
+  @include flex(space-between, flex-start);
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.social-part {
+  @include flex(center, flex-start);
+  flex-direction: column;
+}
+
+.website,
+.community {
+  @include flex(center, center);
+}
+
+.website-title,
+.community-title {
+  margin-right: 10px;
+}
